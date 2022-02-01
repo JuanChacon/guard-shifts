@@ -1,12 +1,18 @@
 import {createRouter,createWebHistory} from 'vue-router';
 import Scheduler from '../views/Scheduler.vue';
+import EmployeeSchedule from '../views/EmployeeSchedule.vue';
 // import store from '../store/index'
 const routes = [
     {
        path: '/',
        name: 'Scheduler',
        component: Scheduler  
-    }
+    },
+    {
+        path: '/employee/:id/schedule',
+        name: 'employee Schedule',
+        component: EmployeeSchedule  
+     }
 ]; 
 const router = createRouter({
     history: createWebHistory(),
