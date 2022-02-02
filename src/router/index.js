@@ -6,7 +6,12 @@ const routes = [
        path: '/',
        name: 'Scheduler',
        component: Scheduler  
-    }
+    },
+    // {
+    //     path: '/schedules-done',
+    //     name: 'employee Schedule',
+    //     component: SchedulesDone  
+    //  }
 ]; 
 const router = createRouter({
     history: createWebHistory(),
