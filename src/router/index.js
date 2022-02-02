@@ -1,6 +1,5 @@
 import {createRouter,createWebHistory} from 'vue-router';
 import Scheduler from '../views/Scheduler.vue';
-import EmployeeSchedule from '../views/EmployeeSchedule.vue';
 // import store from '../store/index'
 const routes = [
     {
@@ -8,11 +7,11 @@ const routes = [
        name: 'Scheduler',
        component: Scheduler  
     },
-    {
-        path: '/employee/:id/schedule',
-        name: 'employee Schedule',
-        component: EmployeeSchedule  
-     }
+    // {
+    //     path: '/schedules-done',
+    //     name: 'employee Schedule',
+    //     component: SchedulesDone  
+    //  }
 ]; 
 const router = createRouter({
     history: createWebHistory(),

@@ -154,11 +154,15 @@ export default {
     const submitSchedules = async (event)=>{
       event.preventDefault();
 
+      try{
+
       const {data} = await axios.post("http://localhost:3000/api/employees/scheduler",{schedules: this.employeeHours, serviceId:this.serviceId});
       alert(data.message);
      // this.$router.push(`/employee/${data.employee_id}/schedule`)
-
-
+      
+      }catch(e){
+      alert('Error al enviar la peticion,intente mas tarde');
+      }
 
     }
 
